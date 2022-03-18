@@ -37,13 +37,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\CountDouwnBehaviour.cs" />
      <Compile Include="Assets\Scripts\WordDataReader.cs" />
      <Compile Include="Assets\Scripts\LettersCount.cs" />
      <Compile Include="Assets\Scripts\SpawnBlock.cs" />
      <Compile Include="Assets\Scripts\BlockAnimator.cs" />
-     <Compile Include="Assets\Scripts\BlockBehaviour.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\CountDouwnBehaviour.cs" />
+     <Compile Include="Assets\Scripts\BlockBehaviour.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
