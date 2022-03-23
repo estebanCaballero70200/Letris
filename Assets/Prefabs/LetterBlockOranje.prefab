@@ -186,9 +186,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8464390251684583026}
-  - component: {fileID: 5840088298841080301}
   - component: {fileID: 6095810591983019080}
   - component: {fileID: 666731699013424606}
+  - component: {fileID: 1944692925291814062}
   m_Layer: 6
   m_Name: LetterBlockOranje
   m_TagString: square
@@ -218,20 +218,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1.6, y: 7.75}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5840088298841080301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3675421499079204005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12f908260b7349544a25e27eb39dfad2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallTime: 0.8
-  startGame: 0
 --- !u!61 &6095810591983019080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -271,6 +257,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelecetd: 0
+--- !u!114 &1944692925291814062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3675421499079204005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d80dc0bf17b7dc46a6ef944e88c1fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallTime: 0.8
+  startGame: 0
 --- !u!1 &7421190293353751669
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class BlockBehaviour : MonoBehaviour
 
     private float previousTime;
     [SerializeField]
-    private float fallTime = 0.8f;
+    public float fallTime = 0.8f;
 
     private static int height = 20;
     private static  int widht = 10;
@@ -31,12 +31,15 @@ public class BlockBehaviour : MonoBehaviour
 
     SpawnBlock spawnBlock;
 
+    ControllerBehaviour controller;
+
 
     
 
     
     void Awake()
     {
+        controller = FindObjectOfType<ControllerBehaviour>();
         spawnBlock = FindObjectOfType<SpawnBlock>();
         letraMesh = GetComponentInChildren<TextMesh>();
                 
@@ -49,6 +52,7 @@ public class BlockBehaviour : MonoBehaviour
         leftMarginMove = FindObjectOfType<SpawnBlock>().leftMargin;
         Debug.Log(rightMarginMove.ToString());
         Debug.Log(leftMarginMove.ToString());
+        controller.blockMove= this;
         
                 
     }
@@ -74,23 +78,24 @@ public class BlockBehaviour : MonoBehaviour
 
 
     
+
+    public void SquareMoveLeft(){
+        transform.position += new Vector3 ( -1f, 0,0);
+            if(!ValidMove())
+            transform.position -= new Vector3 ( -1f, 0,0);
+
+    }
+
+    public void SquareMoveRight(){
+        transform.position += new Vector3 (1f, 0,0);
+            if(!ValidMove())
+            transform.position -= new Vector3 (1f, 0,0);
+    }
+
     void SquareMove(){
 
-            if(Input.GetKeyDown(KeyCode.LeftArrow)){
-                transform.position += new Vector3 ( -1f, 0,0);
-                if(!ValidMove())
-                    transform.position -= new Vector3 ( -1f, 0,0);
-            
-            }
-
-            if(Input.GetKeyDown(KeyCode.RightArrow)){
-                transform.position += new Vector3 (1f, 0,0);
-                if(!ValidMove())
-                    transform.position -= new Vector3 (1f, 0,0);
+           if (Time.time - previousTime > fallTime && startGame) {
                 
-            }
-            if (Time.time - previousTime > (Input.GetKey(KeyCode.DownArrow)? fallTime /10 : fallTime ) && startGame) {
-                Debug.Log("variable start game en " + startGame);
                 transform.position += new Vector3 ( 0, -1, 0);
                 if(!ValidMove()){
                     transform.position -= new Vector3 ( 0, -1, 0);

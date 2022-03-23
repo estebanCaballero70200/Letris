@@ -198,9 +198,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052288307481508002}
-  - component: {fileID: 8666557375928567478}
   - component: {fileID: 6699101493985694724}
   - component: {fileID: 7619397900477286322}
+  - component: {fileID: 746318069391572981}
   m_Layer: 6
   m_Name: LetterBlockSky
   m_TagString: square
@@ -230,20 +230,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1.6, y: 7.75}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8666557375928567478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850520189875483272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12f908260b7349544a25e27eb39dfad2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallTime: 0.8
-  startGame: 0
 --- !u!61 &6699101493985694724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -283,6 +269,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelecetd: 0
+--- !u!114 &746318069391572981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850520189875483272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d80dc0bf17b7dc46a6ef944e88c1fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallTime: 0.8
+  startGame: 0
 --- !u!1 &8853431741170476566
 GameObject:
   m_ObjectHideFlags: 0
