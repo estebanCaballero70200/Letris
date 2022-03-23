@@ -6,7 +6,7 @@ using System;
 public class SpawnBlock : MonoBehaviour
 {
 
-    public GameObject [] blocks;
+    public GameObject block;
 
     WordDataReader reader;
     public string wordResolve;
@@ -37,7 +37,7 @@ public class SpawnBlock : MonoBehaviour
     void Start()
     {
         
-        //NewBlock();
+        NewBlock();
         Margins();
 
       
@@ -52,10 +52,12 @@ public class SpawnBlock : MonoBehaviour
 
     
     public void NewBlock(){
+        Instantiate(block,transform.position, Quaternion.identity );
+
+
+
+
         
-        var rand = new System.Random();
-        Instantiate(blocks[rand.Next(blocks.Length)],transform.position, Quaternion.identity );
-        Debug.Log("Va Bloque");
     }
 
         public String NewLetter (){

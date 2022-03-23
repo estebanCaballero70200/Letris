@@ -17,7 +17,6 @@ public class CountDouwnBehaviour : MonoBehaviour
         spriteVisible = GetComponentInChildren<SpriteRenderer>();
         StartCoroutine(initCountDown());
         
-        
     }
 
     // Update is called once per frame
@@ -28,19 +27,18 @@ public class CountDouwnBehaviour : MonoBehaviour
 
     IEnumerator initCountDown()
     {
-       for (int i = 0; i < sprites.Length; i++)
-        {
-            spriteVisible.sprite = sprites[i];
-            yield return new WaitForSeconds(1);
-            if ( i == (sprites.Length -1)){
-                spawnBlock.startGame = true;
-                this.gameObject.SetActive(false);
-                spawnBlock.NewBlock();
-            }
-        }
+        spriteVisible.sprite = sprites[0];
+        yield return new WaitForSeconds(1);
+        spriteVisible.sprite = sprites[1];
+        yield return new WaitForSeconds(1);
+        spriteVisible.sprite = sprites[2];
+        yield return new WaitForSeconds(1);
+        spriteVisible.sprite = sprites[3];
+        spawnBlock.startGame = true;
+        yield return new WaitForSeconds(2);
+        this.gameObject.SetActive(false);
         
     }
-
 
     
 }

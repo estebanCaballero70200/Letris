@@ -35,41 +35,36 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OnSquare())
+        if (Input.GetMouseButtonDown(0))
         {
-             if (Input.GetMouseButtonDown(0))
+           
+            if (!oneSelected)
             {
-            
-                if (!oneSelected)
-                {
-                    OneSquareClick();  
-                    
-                }
-                if (oneSelected)
-                {
-                    Debug.Log("if en update");
-                    SecondSquareClick(); 
-                }
-                
+                OneSquareClick();  
                 
             }
-
-            if(Input.GetMouseButtonUp(0) && !oneSelected){
-                        
-                        oneSelected = true;
-                        Debug.Log(" onselected esta en " + oneSelected);
-                                
-                        
+            if (oneSelected)
+            {
+                Debug.Log("if en update");
+                SecondSquareClick(); 
             }
             
-            if(Input.GetMouseButtonUp(0) && move) {
-                    Debug.Log("Arranca Corrutina");
-                    StartCoroutine (Move());
-                    
-            }
+              
         }
 
-       
+         if(Input.GetMouseButtonUp(0) && !oneSelected){
+                    
+                    oneSelected = true;
+                    Debug.Log(" onselected esta en " + oneSelected);
+                              
+                    
+        }
+        
+         if(Input.GetMouseButtonUp(0) && move) {
+                Debug.Log("Arranca Corrutina");
+                StartCoroutine (Move());
+                
+         }
 
     }
 
@@ -105,20 +100,10 @@ public class GameManager : MonoBehaviour
                 move = true;
                 
             }
+
+            
+           
         }
-
-          bool OnSquare(){
-
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, moveLayer);
-
-                if (hit.collider != null ){
-                    return true;
-                }
-                
-                return false;
-
-            }
 
         IEnumerator Move (){
              
