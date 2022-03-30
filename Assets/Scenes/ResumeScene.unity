@@ -272,7 +272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\xA1GREAT!"
+  m_Text: 
 --- !u!222 &475994644
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5646140740487587830}
   m_Layer: 6
   m_Name: Letter
-  m_TagString: Untagged
+  m_TagString: letter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +27,9 @@ Transform:
   m_GameObject: {fileID: 5646140740487587824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0256411, y: 1.02, z: 1}
   m_Children: []
-  m_Father: {fileID: 5646140741022228618}
+  m_Father: {fileID: 5646140740906476896}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5646140740487587831
@@ -122,9 +122,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.97499996, y: 0.98039216, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 5646140740487587825}
   m_Father: {fileID: 5646140741022228618}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -211,7 +212,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5646140740487587825}
   - {fileID: 5646140740906476896}
   m_Father: {fileID: 0}
   m_RootOrder: 0

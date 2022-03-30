@@ -11,7 +11,9 @@ public class SpawnBlock : MonoBehaviour
 
     public GameObject [] blocks;
 
-    
+    public Camera cam;
+
+    public GameObject fondo;
 
     WordDataReader reader;
     public string wordResolve;
@@ -59,6 +61,11 @@ public class SpawnBlock : MonoBehaviour
         
         SquareHolders();
 
+        if(!IsPair(wordResolve.Length)){
+            cam.transform.position += new Vector3 (0.5f, 0f, 0f);
+            fondo.transform.position += new Vector3 (0.5f, 0f, 0f);
+        }
+
       
         
         
@@ -67,26 +74,7 @@ public class SpawnBlock : MonoBehaviour
     void Update()
     {
 
-       /*  if (fin)
-        {
-            Transform square;
-            StringBuilder myStringBuilder = new StringBuilder();
-            for (int i = 0; i < wordResolve.Length; i++)
-            {
-                Vector3 letra = new Vector3 ((leftMargin + i + 0.02f ),3.56f, 0);
-                if (transform.position == letra)
-                {
-                    square.position = letra; 
-                    string letter = letra.FindObjectOfType<GameObject>().GetComponent<Text>().text;
-		            myStringBuilder.Insert(i, letter);
-                    
-                }
-                
-              
-            }
-
-            
-        } */
+       
         
     }
 
@@ -154,27 +142,24 @@ public class SpawnBlock : MonoBehaviour
         } 
 
         IEnumerator YourWord () {
-            StringBuilder myStringBuilder = new StringBuilder();
-                                  
-            for (int i = 0; i < wordResolve.Length; i++)
-            {
-                Debug.Log("Llega esto :"); 
-                Vector2 point = new Vector2 ((leftMargin + i ), 3.5f);
-                Vector2 area = new Vector2(1,1);
-                
-                Collider2D collider = Physics2D.OverlapBox(point, area, 0f, 6);
-                if(collider != null)
-                {
-                        Debug.Log(collider.gameObject.name);
-                        
-                        /* GameObject go = collider.gameObject; //This is the game object you collided with
-                        string letter = go.GetComponentInChildren<Text>().text;
-		                myStringBuilder.Insert(i, letter); */
+            
+            GameObject [] finaLetters = GameObject.FindGameObjectsWithTag("letter");
+            var word = "";
+
+
+            for (int i = 0; i < finaLetters.Length - 1; i++)
+                {   
+
+                    int index = (Mathf.RoundToInt(finaLetters[i].transform.position.x))- leftMargin + 1;
+                    word += finaLetters[i].GetComponent<TextMesh>().text;
                 }
-              
-            }
-            /* GameManager.instance.YourWord = myStringBuilder.ToString();
-            Debug.Log ("La palabra tuya: " +  myStringBuilder.ToString()); */
+
+            
+            GameManager.instance.YourWord = word;
+                                  
+            Debug.Log( "palabra final: " + word);
+
+
             yield return null;
             SceneManager.LoadScene(2);
         }
