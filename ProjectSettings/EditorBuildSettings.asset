@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ResumeScene.unity
+    guid: 073b40fd4529ff745bc9d576c2842058
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 98aa6b886e9dace42aaf4346f0157a1b, type: 2}
