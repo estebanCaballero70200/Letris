@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\LettersQuantity.cs" />
+     <Compile Include="Assets\Scripts\ResumeController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\ManuControlloer.cs" />
      <Compile Include="Assets\Scripts\WordDataReader.cs" />
@@ -45,7 +46,7 @@
      <Compile Include="Assets\Scripts\SpawnBlock.cs" />
      <Compile Include="Assets\Scripts\ControllsBehaviour.cs" />
      <Compile Include="Assets\Scripts\LevelController.cs" />
-     <Compile Include="Assets\Scripts\ResumeController.cs" />
+     <Compile Include="Assets\Scripts\PlaceholderController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -91,20 +91,22 @@ public class SpawnBlock : MonoBehaviour
 
             if(wordResolve.Length > 0) {
 
-            var rand = new System.Random();
-            int index = rand.Next(wordResolve.Length);
-            String letra =   wordResolve[index].ToString();            
+                var rand = new System.Random();
+                int index = rand.Next(wordResolve.Length);
+                String letra =   wordResolve[index].ToString();            
+                    
+                wordResolve = wordResolve.Remove(index, 1);
                 
-            wordResolve = wordResolve.Remove(index, 1);
-            
 
-            return letra;
+                return letra;
+            } else {
+                StartCoroutine(YourWord());
+                return null;
+                
             }
-            fin = true;
-            StartCoroutine(YourWord());
+            
             
 
-            return null;
                     
         }
 
@@ -145,7 +147,6 @@ public class SpawnBlock : MonoBehaviour
             
             GameObject [] finaLetters = GameObject.FindGameObjectsWithTag("letter");
             var word = "";
-
 
             for (int i = 0; i < finaLetters.Length - 1; i++)
                 {   

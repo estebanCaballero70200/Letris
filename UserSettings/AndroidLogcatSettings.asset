@@ -1,43 +1,13 @@
 {
     "m_SelectedDeviceId": "R58R75433TR",
     "m_SelectedPackage": {
-        "deviceId": "R58R75433TR",
-        "name": "com.PyxisGames.WordTrisPyxis",
-        "processId": 16917,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 25302,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 26407,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.sec.android.app.launcher",
-            "processId": 18374,
-            "exited": false
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 28192,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 18951,
-            "exited": true
-        },
         {
             "deviceId": "R58R75433TR",
             "name": "com.PyxisGames.WordTrisPyxis",
@@ -48,6 +18,30 @@
             "deviceId": "R58R75433TR",
             "name": "com.PyxisGames.WordTrisPyxis",
             "processId": 16917,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.PyxisGames.WordTrisPyxis",
+            "processId": 11142,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.PyxisGames.WordTrisPyxis",
+            "processId": 11687,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.PyxisGames.WordTrisPyxis",
+            "processId": 12193,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.sec.android.app.launcher",
+            "processId": 2248,
             "exited": false
         }
     ],

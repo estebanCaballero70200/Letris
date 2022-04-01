@@ -107,10 +107,12 @@ public class BlockController : MonoBehaviour
                 if(!ValidMove()){
                     transform.position -= new Vector3 ( 0, -1, 0);
                     AddToGrid();
+                    this.gameObject.layer = 7; 
                     this.enabled = false;
-                    if (!FindObjectOfType<SpawnBlock>().fin)
+                    if (!spawnBlock.fin)
                     {
-                        FindObjectOfType<SpawnBlock>().NewBlock();
+                        spawnBlock.NewBlock();
+                       
                     } else {
                         Destroy(gameObject);
                     }
@@ -129,8 +131,6 @@ public class BlockController : MonoBehaviour
                 int roundedY = Mathf.RoundToInt(children.transform.position.y);
 
                 grid[roundedX, roundedY] = children;
-
-                Debug.Log(children.gameObject.name);
 
             }
 
@@ -153,7 +153,8 @@ public class BlockController : MonoBehaviour
                 return false;
             }
 
-            if ( grid[roundedX,roundedY] != null && grid[roundedX,roundedY].gameObject.name == "PlaceHolder" ){
+            if ( grid[roundedX,roundedY] != null && grid[roundedX,roundedY].gameObject != spawnBlock.placeholder ){
+        
                 Destroy(gameObject);
                 return false;
             }

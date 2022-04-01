@@ -91,12 +91,15 @@ public class LevelController : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, moveLayer);
 
-            if (hit.collider != null && oneSelected == true )
+            if (hit.collider != null && oneSelected == true)
             {
                 squareTwo = hit.collider.transform;
-                squareTwoVector = new Vector2 (squareTwo.position.x, squareTwo.position.y);
-                Debug.Log("SegundoIf");
-                move = true;
+                if (squareOne != squareTwo)
+                {
+                    squareTwoVector = new Vector2 (squareTwo.position.x, squareTwo.position.y);
+                    Debug.Log("SegundoIf");
+                    move = true;
+                }
                 
             }
 

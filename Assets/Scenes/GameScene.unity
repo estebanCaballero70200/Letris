@@ -530,7 +530,7 @@ AudioSource:
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -1282,6 +1282,7 @@ RectTransform:
   m_Children:
   - {fileID: 1389937130}
   - {fileID: 361236011}
+  - {fileID: 1483523163}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1343,13 +1344,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483523160}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 229.1, y: 334.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 287.51843, y: 247.78598, z: 0}
+  m_LocalScale: {x: 3.6120403, y: 3.6120403, z: 3.6120403}
   m_Children:
   - {fileID: 1586337198}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1414961226}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1586337197
 GameObject:
@@ -1801,7 +1802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   oneSelected: 0
   move: 0
 --- !u!1 &2018613978

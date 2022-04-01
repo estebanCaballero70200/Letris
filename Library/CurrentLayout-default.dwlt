@@ -43,7 +43,7 @@ MonoBehaviour:
     width: 1154
     height: 948
   m_ShowMode: 4
-  m_Title: Android Logcat
+  m_Title: Scene
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 712
     height: 411
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 121}
   m_MaxSize: {x: 4000, y: 4021}
   vertical: 0
-  controlID: 4166
+  controlID: 267
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,10 +145,10 @@ MonoBehaviour:
     y: 0
     width: 878
     height: 627
-  m_MinSize: {x: 303, y: 221}
+  m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 39
+  controlID: 40
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 113
+  controlID: 115
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 38
+  controlID: 39
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -292,8 +292,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 898
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AndroidLogcatConsoleWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -318,14 +318,14 @@ MonoBehaviour:
     y: 0
     width: 578
     height: 627
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 87
+  controlID: 89
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -528,7 +528,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -543,7 +543,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 74420000
     m_LastClickedID: 17012
-    m_ExpandedIDs: 0000000052440000544400005644000058440000
+    m_ExpandedIDs: 00000000b6450000b8450000ba450000bc450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,18 +571,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 28}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000524400005644000058440000
+    m_ExpandedIDs: ffffffff00000000b6450000b8450000ba450000bc450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GameScene
-      m_OriginalName: GameScene
+      m_Name: LetterBlock_Orange
+      m_OriginalName: LetterBlock_Orange
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 17586
+      m_UserData: 17478
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -752,9 +752,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 153.25401, y: 150.49388, z: -46.578804}
+    m_Target: {x: 153.68318, y: 150.17073, z: -50.583206}
     speed: 2
-    m_Value: {x: 153.25401, y: 150.49388, z: -46.578804}
+    m_Value: {x: 153.68318, y: 150.17073, z: -50.583206}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -805,9 +805,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 484.6777
+    m_Target: 483.69623
     speed: 2
-    m_Value: 484.6777
+    m_Value: 483.69623
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -862,7 +862,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3cbfffff56bfffff0cc0ffff12c0ffff1ec0fffff2d0ffffd6d5ffff94d9ffff2adeffff64fbffffd6430000766f0000a26f0000ae6f0000f47a0000
+      m_ExpandedIDs: 00f5ffff1af5ffffd6f5ffffe0f5fffff0f5ffff2af7ffff44f7fffffcf7ffff02f8ffff0ef8ffff64fbffffa8600000b4600000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
