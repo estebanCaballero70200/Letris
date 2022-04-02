@@ -35,17 +35,16 @@ public class SpawnBlock : MonoBehaviour
     public GameObject placeholder;
 
     GameManager gmanager;
+
+    public  int height = 20;
+    public  int widht = 10;
+    public  Transform [,] grid = new Transform [10, 20];
     
-    
-
-
-
-
     
     // Start is called before the first frame update
    void Awake()
    {
-        
+        gmanager = GameManager.instance;
         reader = new WordDataReader();
        
         wordResolve = reader.FinalWord();
@@ -144,16 +143,21 @@ public class SpawnBlock : MonoBehaviour
         } 
 
         IEnumerator YourWord () {
+
+           AddToGrid();
             
             GameObject [] finaLetters = GameObject.FindGameObjectsWithTag("letter");
             var word = "";
 
-            for (int i = 0; i < finaLetters.Length - 1; i++)
-                {   
+                            
+                for (int i = 0; i < finaLetters.Length; i++)
+                    {   
 
-                    int index = (Mathf.RoundToInt(finaLetters[i].transform.position.x))- leftMargin + 1;
-                    word += finaLetters[i].GetComponent<TextMesh>().text;
-                }
+                        int index = (Mathf.RoundToInt(finaLetters[i].transform.position.x))- leftMargin + 1;
+                        word += finaLetters[i].GetComponent<TextMesh>().text;
+                                               
+                    }
+            
 
             
             GameManager.instance.YourWord = word;
@@ -164,4 +168,18 @@ public class SpawnBlock : MonoBehaviour
             yield return null;
             SceneManager.LoadScene(2);
         }
+
+        public void AddToGrid(){
+        grid = new Transform [10, 20];
+        foreach (Transform children in transform)
+            {
+                int roundedX = Mathf.RoundToInt(children.transform.position.x);
+                int roundedY = Mathf.RoundToInt(children.transform.position.y);
+
+                grid[roundedX, roundedY] = children;
+
+            }
+
+            
+    }
 }

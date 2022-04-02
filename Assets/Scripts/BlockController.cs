@@ -9,11 +9,9 @@ public class BlockController : MonoBehaviour
     [SerializeField]
     public float fallTime;
 
-    private static int height = 20;
+    /* private static int height = 20;
     private static  int widht = 10;
-    
-
-    private static Transform [,] grid = new Transform [widht, height];
+    private static Transform [,] grid = new Transform [widht, height]; */
 
     private WordDataReader reader;
 
@@ -106,7 +104,7 @@ public class BlockController : MonoBehaviour
                 spawnBlock.audioSource.PlayOneShot(spawnBlock.audioBlocks[0]); 
                 if(!ValidMove()){
                     transform.position -= new Vector3 ( 0, -1, 0);
-                    AddToGrid();
+                    spawnBlock.AddToGrid();
                     this.gameObject.layer = 7; 
                     this.enabled = false;
                     if (!spawnBlock.fin)
@@ -123,7 +121,7 @@ public class BlockController : MonoBehaviour
             }
 } 
 
-    void AddToGrid(){
+   /*  void AddToGrid(){
 
         foreach (Transform children in transform)
             {
@@ -135,7 +133,7 @@ public class BlockController : MonoBehaviour
             }
 
             
-    }
+    } */
 
     
 
@@ -148,18 +146,18 @@ public class BlockController : MonoBehaviour
             int roundedX = Mathf.RoundToInt(children.transform.position.x);
             int roundedY = Mathf.RoundToInt(children.transform.position.y);
             
-            if(roundedX < leftMarginMove || roundedX >= widht - rightMarginMove || roundedY < 4 || roundedY >= height){
+            if(roundedX < leftMarginMove || roundedX >= spawnBlock.widht - rightMarginMove || roundedY < 4 || roundedY >= spawnBlock.height){
                 
                 return false;
             }
 
-            if ( grid[roundedX,roundedY] != null && grid[roundedX,roundedY].gameObject != spawnBlock.placeholder ){
+            if ( spawnBlock.grid[roundedX,roundedY] != null && spawnBlock.grid[roundedX,roundedY].gameObject != spawnBlock.placeholder ){
         
                 Destroy(gameObject);
                 return false;
             }
 
-            if (FindObjectOfType<SpawnBlock>().fin){
+            if (spawnBlock.fin){
                 return false;
             }            
 

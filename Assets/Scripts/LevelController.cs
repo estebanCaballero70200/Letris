@@ -18,9 +18,13 @@ public class LevelController : MonoBehaviour
 
     public bool move;
 
+    private SpawnBlock spawnBlock;
+
       
     void Start()
     {
+
+        spawnBlock = FindObjectOfType<SpawnBlock>();
         
         oneSelected = false;
         move = false;
@@ -61,6 +65,8 @@ public class LevelController : MonoBehaviour
                 if(Input.GetMouseButtonUp(0) && move) {
                         Debug.Log("Arranca Corrutina");
                         StartCoroutine (Move());
+                        spawnBlock.AddToGrid();
+
                         
                 }
         }
@@ -115,6 +121,7 @@ public class LevelController : MonoBehaviour
                 oneSelected = false;
 
             yield return new WaitForSeconds (0.5f);
+                
 
                 
                 

@@ -530,7 +530,7 @@ AudioSource:
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -1678,6 +1678,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: fe1a20219ba5fb9409d6ac35cf9876b1, type: 3}
   - {fileID: 8300000, guid: 934d92b072b7db74e80a065060a6a757, type: 3}
   placeholder: {fileID: 3952330287243169320, guid: 571d6a5c5d61db44e821cb7eb3d76aa9, type: 3}
+  height: 20
+  widht: 10
 --- !u!4 &1868699761
 Transform:
   m_ObjectHideFlags: 0
