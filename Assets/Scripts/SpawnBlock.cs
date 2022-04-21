@@ -39,6 +39,8 @@ public class SpawnBlock : MonoBehaviour
     public  int height = 20;
     public  int widht = 10;
     public  Transform [,] grid = new Transform [10, 20];
+
+    private string forYourWord;
     
     
     // Start is called before the first frame update
@@ -48,6 +50,8 @@ public class SpawnBlock : MonoBehaviour
         reader = new WordDataReader();
        
         wordResolve = reader.FinalWord();
+
+        forYourWord = wordResolve;
         
    }
 
@@ -59,16 +63,17 @@ public class SpawnBlock : MonoBehaviour
         Margins();
         
         SquareHolders();
+        
+        //METODO QUE INSTANCIA OBSTÁCULOS EN EL CAMINO
+        //SquareBloquers();
 
         if(!IsPair(wordResolve.Length)){
             cam.transform.position += new Vector3 (0.5f, 0f, 0f);
             fondo.transform.position += new Vector3 (0.5f, 0f, 0f);
         }
 
-      
-        
-        
     }
+
 
     void Update()
     {
@@ -76,6 +81,8 @@ public class SpawnBlock : MonoBehaviour
        
         
     }
+
+   
 
     
     public void NewBlock(){
@@ -99,7 +106,7 @@ public class SpawnBlock : MonoBehaviour
 
                 return letra;
             } else {
-                StartCoroutine(YourWord());
+                YourWord();
                 return null;
                 
             }
@@ -142,32 +149,45 @@ public class SpawnBlock : MonoBehaviour
 
         } 
 
-        IEnumerator YourWord () {
+        void YourWord () {
 
-           AddToGrid();
+            Debug.Log("palabra en yourWord: " + forYourWord);
+
+            List<GameObject> finalSquares = new List<GameObject>(GameObject.FindGameObjectsWithTag("square"));
             
-            GameObject [] finaLetters = GameObject.FindGameObjectsWithTag("letter");
-            var word = "";
+            GameObject[] resultSquares = new GameObject[forYourWord.Length];
+            Debug.Log( "GameObjectRecogidos: " + finalSquares.Count);
+            string yourWord = "";
 
-                            
-                for (int i = 0; i < finaLetters.Length; i++)
-                    {   
+            if(finalSquares.Count != forYourWord.Length){
+                int index = forYourWord.Length;
+                finalSquares.Remove(finalSquares[index]);
+            }
 
-                        int index = (Mathf.RoundToInt(finaLetters[i].transform.position.x))- leftMargin + 1;
-                        word += finaLetters[i].GetComponent<TextMesh>().text;
-                                               
-                    }
+            Debug.Log( "array de objetos procesado: " + finalSquares.Count);
+
+            for (int i = 0; i < finalSquares.Count; i++)
+            {
+                int index = (Mathf.RoundToInt(finalSquares[i].transform.position.x))- leftMargin;
+                Debug.Log("square en index: " + index + " con letra: " + finalSquares[i].GetComponentInChildren<TextMesh>().text );
+                resultSquares[index] = finalSquares[i];
+
+                
+            }
+            for (int i = 0; i < resultSquares.Length; i++)
+            {
+                yourWord += resultSquares[i].GetComponentInChildren<TextMesh>().text;
+                Debug.Log( "yourWord en interación " + i + " : " + yourWord);
             
-
-            
-            GameManager.instance.YourWord = word;
-                                  
-            Debug.Log( "palabra final: " + word);
+            }
+            Debug.Log(yourWord);
+            gmanager.YourWord = yourWord;
 
 
-            yield return null;
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
+
+
 
         public void AddToGrid(){
         grid = new Transform [10, 20];
@@ -180,6 +200,23 @@ public class SpawnBlock : MonoBehaviour
 
             }
 
+        }
+
+         void SquareBloquers ()
+         {
+            var rand = new System.Random();
+            int index = 0;
+            for (int i = 0; i < 8; i++)
+            {
+                int p = rand.Next(wordResolve.Length);
+                while (p==index)
+                {
+                    p = rand.Next(wordResolve.Length);
+                }
+                Instantiate(placeholder ,new Vector2 (((leftMargin + p + 0.02f )-1), (6.56f + i)) , Quaternion.identity );
+            }
+         } 
+              
             
-    }
+
 }

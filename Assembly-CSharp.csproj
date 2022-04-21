@@ -47,6 +47,9 @@
      <Compile Include="Assets\Scripts\ControllsBehaviour.cs" />
      <Compile Include="Assets\Scripts\LevelController.cs" />
      <Compile Include="Assets\Scripts\PlaceholderController.cs" />
+     <Compile Include="Assets\Scripts\LevelManager\MapSelector.cs" />
+     <Compile Include="Assets\Scripts\LevelManager\UIManager.cs" />
+     <Compile Include="Assets\Scripts\LevelManager\LevelSelection.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

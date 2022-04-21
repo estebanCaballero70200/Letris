@@ -47,31 +47,21 @@ public class LevelController : MonoBehaviour
                     }
                     if (oneSelected)
                     {
-                        Debug.Log("if en update");
                         SecondSquareClick(); 
                     }
-                    
-                    
                 }
 
                 if(Input.GetMouseButtonUp(0) && !oneSelected){
                             
                             oneSelected = true;
-                            Debug.Log(" onselected esta en " + oneSelected);
-                                    
-                            
                 }
                 
                 if(Input.GetMouseButtonUp(0) && move) {
-                        Debug.Log("Arranca Corrutina");
                         StartCoroutine (Move());
                         spawnBlock.AddToGrid();
-
-                        
                 }
-        }
 
-    }
+        }
 
        
 
@@ -140,4 +130,5 @@ public class LevelController : MonoBehaviour
 
 
         
+}
 }

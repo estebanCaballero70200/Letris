@@ -29,15 +29,26 @@ public class ResumeController : MonoBehaviour
     void Resume(){
         if(text1.text == text2.text){
             text3.GetComponent<Text>().text = "Great!!!";
-            text3.GetComponent<Text>().color = Color.green; 
+            text3.GetComponent<Text>().color = Color.green;
+            GameManager.instance.stars += 1; 
         }else{
             text3.GetComponent<Text>().text = "Upsss!!!";
-            text3.GetComponent<Text>().color = Color.red; 
+            text3.GetComponent<Text>().color = Color.red;
+            if (GameManager.instance.stars > 0)
+            {
+                GameManager.instance.stars -= 1; 
+            } 
         }
 
     }
 
     public void MaingManu (){
-        SceneManager.LoadScene(0);
+        UIManager.instance.mapSelectionPanel.SetActive(true);
+        SceneManager.LoadScene(1);
+    }
+
+    public void Reload(){
+
+        SceneManager.LoadScene(2);
     }
 }

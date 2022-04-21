@@ -9,9 +9,6 @@ public class BlockController : MonoBehaviour
     [SerializeField]
     public float fallTime;
 
-    /* private static int height = 20;
-    private static  int widht = 10;
-    private static Transform [,] grid = new Transform [widht, height]; */
 
     private WordDataReader reader;
 
@@ -119,26 +116,9 @@ public class BlockController : MonoBehaviour
 
                 previousTime = Time.time;
             }
-} 
+    } 
 
-   /*  void AddToGrid(){
-
-        foreach (Transform children in transform)
-            {
-                int roundedX = Mathf.RoundToInt(children.transform.position.x);
-                int roundedY = Mathf.RoundToInt(children.transform.position.y);
-
-                grid[roundedX, roundedY] = children;
-
-            }
-
-            
-    } */
-
-    
-
-
-     bool ValidMove()
+    bool ValidMove()
      {
 
          

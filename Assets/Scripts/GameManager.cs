@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement; 
 
 public class GameManager : MonoBehaviour
 {
    
    public static GameManager instance;
 
-   private int qletters = 5;
+   private int qletters;
    public int Qletters {
         get
         {
@@ -19,8 +21,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+     
     public string YourWord {get; set;}
     public string TheWord {get;set;}
+
+    public int stars;
+
+    
+
+
+
 
    void Awake()
    {
@@ -34,4 +44,26 @@ public class GameManager : MonoBehaviour
 
 
    }
+
+   void Start()
+   {
+       if (PlayerPrefs.HasKey("stars"))
+       {
+           stars = PlayerPrefs.GetInt("stars");
+       }
+       stars = 1;
+   }
+
+   void OnDisable()
+   {
+       PlayerPrefs.SetInt("stars", stars);
+   }
+
+  
+
+   
+   
+   
+
+  
 }

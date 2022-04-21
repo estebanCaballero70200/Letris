@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58R75433TR",
         "name": "com.PyxisGames.WordTrisPyxis",
-        "processId": 29000,
+        "processId": 32005,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,43 +11,43 @@
         {
             "deviceId": "R58R75433TR",
             "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 1177,
+            "processId": 4959,
             "exited": true
         },
         {
             "deviceId": "R58R75433TR",
             "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 16917,
+            "processId": 14659,
             "exited": true
         },
         {
             "deviceId": "R58R75433TR",
             "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 11142,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 11687,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 12193,
+            "processId": 29116,
             "exited": true
         },
         {
             "deviceId": "R58R75433TR",
             "name": "com.sec.android.app.launcher",
-            "processId": 2248,
+            "processId": 17813,
             "exited": false
         },
         {
             "deviceId": "R58R75433TR",
             "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 29000,
+            "processId": 29970,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.unity3d.mobileremote",
+            "processId": 30479,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.PyxisGames.WordTrisPyxis",
+            "processId": 32005,
             "exited": false
         }
     ],
