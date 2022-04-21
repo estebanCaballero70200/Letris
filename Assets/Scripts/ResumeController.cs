@@ -31,12 +31,17 @@ public class ResumeController : MonoBehaviour
             text3.GetComponent<Text>().text = "Great!!!";
             text3.GetComponent<Text>().color = Color.green;
             GameManager.instance.stars += 1; 
+            PlayerPrefs.SetInt("stars", GameManager.instance.stars);
+            Debug.Log( "estrellas guardadas en juego: " + PlayerPrefs.GetInt("stars"));
+
+
         }else{
             text3.GetComponent<Text>().text = "Upsss!!!";
             text3.GetComponent<Text>().color = Color.red;
             if (GameManager.instance.stars > 0)
             {
                 GameManager.instance.stars -= 1; 
+                PlayerPrefs.SetInt("stars", GameManager.instance.stars);
             } 
         }
 
@@ -50,5 +55,6 @@ public class ResumeController : MonoBehaviour
     public void Reload(){
 
         SceneManager.LoadScene(2);
+        PlayerPrefs.Save();
     }
 }

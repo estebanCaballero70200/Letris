@@ -3,35 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "R58R75433TR",
         "name": "com.PyxisGames.WordTrisPyxis",
-        "processId": 32005,
+        "processId": 4636,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 4959,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 14659,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.PyxisGames.WordTrisPyxis",
-            "processId": 29116,
-            "exited": true
-        },
-        {
-            "deviceId": "R58R75433TR",
-            "name": "com.sec.android.app.launcher",
-            "processId": 17813,
-            "exited": false
-        },
         {
             "deviceId": "R58R75433TR",
             "name": "com.PyxisGames.WordTrisPyxis",
@@ -48,6 +24,30 @@
             "deviceId": "R58R75433TR",
             "name": "com.PyxisGames.WordTrisPyxis",
             "processId": 32005,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.PyxisGames.WordTrisPyxis",
+            "processId": 2856,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.sec.android.app.launcher",
+            "processId": 26051,
+            "exited": false
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.PyxisGames.WordTrisPyxis",
+            "processId": 3696,
+            "exited": true
+        },
+        {
+            "deviceId": "R58R75433TR",
+            "name": "com.PyxisGames.WordTrisPyxis",
+            "processId": 4636,
             "exited": false
         }
     ],

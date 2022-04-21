@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public string YourWord {get; set;}
     public string TheWord {get;set;}
 
-    public int stars;
+    public int stars = 1;
 
     
 
@@ -50,13 +50,16 @@ public class GameManager : MonoBehaviour
        if (PlayerPrefs.HasKey("stars"))
        {
            stars = PlayerPrefs.GetInt("stars");
-       }
-       stars = 1;
+           Debug.Log ("Estrellas guardadas: " + stars);
+           if (stars == 0){
+               stars = 1;
+           }
+       } 
    }
 
    void OnDisable()
    {
-       PlayerPrefs.SetInt("stars", stars);
+       PlayerPrefs.Save();
    }
 
   
