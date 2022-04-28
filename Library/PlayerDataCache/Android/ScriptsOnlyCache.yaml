@@ -6,14 +6,11 @@ ScriptsOnlyBuild:
     - GameManager
     - LettersQuantity
     - LevelController
-    - LevelSelection
     - ManuControlloer
-    - MapSelector
     - PlaceholderController
     - ResumeController
     - SpawnBlock
     - StartCount
-    - UIManager
     - WordDataReader
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -49,9 +46,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/GameScene.unity:
@@ -90,35 +85,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1880}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 2304}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2556}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2838}
     - Class: 114
-      Script: {instanceID: 2932}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 2984}
+      Script: {instanceID: 2982}
     - Class: 114
-      Script: {instanceID: 3184}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3438}
     - Class: 114
-      Script: {instanceID: 3564}
+      Script: {instanceID: 3562}
     - Class: 114
-      Script: {instanceID: 3858}
+      Script: {instanceID: 3856}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 3870}
+      Script: {instanceID: 3868}
     - Class: 114
-      Script: {instanceID: 4426}
+      Script: {instanceID: 4422}
     - Class: 114
-      Script: {instanceID: 5592}
+      Script: {instanceID: 5588}
+    - Class: 114
+      Script: {instanceID: 17364}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -128,65 +125,6 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/LevelsScene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1530}
-    - Class: 114
-      Script: {instanceID: 1550}
-    - Class: 114
-      Script: {instanceID: 2304}
-    - Class: 114
-      Script: {instanceID: 2314}
-    - Class: 114
-      Script: {instanceID: 2508}
-    - Class: 114
-      Script: {instanceID: 2750}
-    - Class: 114
-      Script: {instanceID: 2932}
-    - Class: 114
-      Script: {instanceID: 3184}
-    - Class: 114
-      Script: {instanceID: 3440}
-    - Class: 114
-      Script: {instanceID: 3564}
-    - Class: 114
-      Script: {instanceID: 3890}
-    - Class: 114
-      Script: {instanceID: 4178}
-    - Class: 114
-      Script: {instanceID: 5904}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -226,27 +164,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2296}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 2304}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2556}
+      Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2818}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 2932}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 3184}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3438}
     - Class: 114
-      Script: {instanceID: 3564}
+      Script: {instanceID: 3562}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 5004}
     - Class: 114
-      Script: {instanceID: 5416}
+      Script: {instanceID: 5412}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -283,21 +221,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1550}
     - Class: 114
+      Script: {instanceID: 2304}
+    - Class: 114
       Script: {instanceID: 2308}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2750}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 2932}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3184}
+      Script: {instanceID: 3438}
     - Class: 114
-      Script: {instanceID: 3440}
-    - Class: 114
-      Script: {instanceID: 3564}
+      Script: {instanceID: 3562}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -321,12 +259,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: f7cc6a1c78ead15ab8f95453ad4de3f8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LevelSelection
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
@@ -419,22 +351,16 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 31bb539766c16cea0d33c71b6c49e51e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIManager
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: a81b7bc7b24584ff6b9b55a74185858a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ResumeController
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 91d258529db2b5060a913f2afcea1a21
@@ -455,13 +381,13 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: ccf9430b3ec35091aea439a9a71f24e8
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
   - hash:
       serializedVersion: 2
-      Hash: 0549fc49f917beb908ffc2489629ee40
+      Hash: 9492465204d1881ea508be39ea790af6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ManuControlloer
@@ -695,12 +621,6 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
-      Hash: 9c6008b26d759107196b49c918f1e9b7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MapSelector
-  - hash:
-      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -912,7 +832,6 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
-  - Assets/Scenes/LevelsScene.unity
   - Assets/Scenes/GameScene.unity
   - Assets/Scenes/ResumeScene.unity
   playerPath: C:/Users/ecaballero/Desktop/WordTris.apk

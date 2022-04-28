@@ -488,8 +488,6 @@ MonoBehaviour:
   boton_6: {fileID: 0}
   boton_7: {fileID: 0}
   boton_8: {fileID: 0}
-  boton_music: {fileID: 0}
-  audioSource: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +530,7 @@ AudioSource:
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -1076,10 +1074,10 @@ RectTransform:
   m_Father: {fileID: 1414961226}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 16, y: 171}
-  m_SizeDelta: {x: 200, y: -183.25098}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 25, y: 1103}
+  m_SizeDelta: {x: -880, y: -2105.251}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1389937131
 MonoBehaviour:
@@ -1202,6 +1200,7 @@ GameObject:
   - component: {fileID: 1414961225}
   - component: {fileID: 1414961224}
   - component: {fileID: 1414961223}
+  - component: {fileID: 1414961227}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1266,7 +1265,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1292,6 +1291,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1414961227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414961222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5687acb77d37f154b8d121b205d6aea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1483523160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,7 +1345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483523160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -524, y: -911, z: 0}
+  m_LocalPosition: {x: 287.51843, y: 247.78598, z: 0}
   m_LocalScale: {x: 3.6120403, y: 3.6120403, z: 3.6120403}
   m_Children:
   - {fileID: 1586337198}
@@ -1366,7 +1377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586337197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -224.72, y: -321.94, z: 0}
   m_LocalScale: {x: 3.5076, y: 3.5076, z: 3.5076}
   m_Children: []
   m_Father: {fileID: 1483523163}

@@ -9,6 +9,9 @@ public class BlockController : MonoBehaviour
     [SerializeField]
     public float fallTime;
 
+    /* private static int height = 20;
+    private static  int widht = 10;
+    private static Transform [,] grid = new Transform [widht, height]; */
 
     private WordDataReader reader;
 
@@ -101,7 +104,7 @@ public class BlockController : MonoBehaviour
                 spawnBlock.audioSource.PlayOneShot(spawnBlock.audioBlocks[0]); 
                 if(!ValidMove()){
                     transform.position -= new Vector3 ( 0, -1, 0);
-                    spawnBlock.AddToGrid();
+                    spawnBlock.AddToGrid(this.transform);
                     this.gameObject.layer = 7; 
                     this.enabled = false;
                     if (!spawnBlock.fin)
@@ -116,13 +119,31 @@ public class BlockController : MonoBehaviour
 
                 previousTime = Time.time;
             }
-    } 
+} 
 
-    bool ValidMove()
+   /*  void AddToGrid(){
+
+        foreach (Transform children in transform)
+            {
+                int roundedX = Mathf.RoundToInt(children.transform.position.x);
+                int roundedY = Mathf.RoundToInt(children.transform.position.y);
+
+                grid[roundedX, roundedY] = children;
+
+            }
+
+            
+    } */
+
+    
+
+
+     bool ValidMove()
      {
 
          
-        foreach (Transform children in transform){
+        foreach (Transform children in transform)
+        {
             int roundedX = Mathf.RoundToInt(children.transform.position.x);
             int roundedY = Mathf.RoundToInt(children.transform.position.y);
             
