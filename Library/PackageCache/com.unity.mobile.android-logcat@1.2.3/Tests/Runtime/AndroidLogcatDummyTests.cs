@@ -1,11 +1,3 @@
-using System;
-using NUnit.Framework;
-
-class AndroidLogcatDummyTests
-{
-    [Test]
-    public void DummyTest()
-    {
-        Console.WriteLine("This is a placeholder test, to make Katana happy. To run real Android Logcat tests, you need to switch active platform to Android in Editor");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3fa616f139bbfcd08528780615e7ad63a3c597daefdc5b9f7f6f353e59069f43
+size 302

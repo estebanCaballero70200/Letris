@@ -1,23 +1,3 @@
-{
-    "name": "Unity.Mobile.AndroidLogcat.EditorTests",
-    "references": [
-        "Unity.Mobile.AndroidLogcat.Editor",
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "nunit.framework.dll"
-    ],
-    "autoReferenced": false,
-    "defineConstraints": [
-        "UNITY_INCLUDE_TESTS"
-    ],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbb6d9325e3e40897511ec1f5cb5a55016ea101a4858f356aac2d8d87f144bbc
+size 577

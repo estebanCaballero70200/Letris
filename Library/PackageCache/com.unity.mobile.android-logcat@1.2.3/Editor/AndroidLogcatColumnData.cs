@@ -1,29 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.Android.Logcat
-{
-    [Serializable]
-    internal class ColumnData
-    {
-        [NonSerialized]
-        public GUIContent content;
-
-        public float width;
-
-        [NonSerialized]
-        // Updated automatically when we're moving the splitter
-        public Rect itemSize = Rect.zero;
-
-        [NonSerialized]
-        public bool splitterDragging;
-
-        [NonSerialized]
-        public float splitterDragStartMouseValue;
-
-        [NonSerialized]
-        public float splitterDragStartWidthValue;
-
-        public bool enabled = true;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5fe4298b819809d4f569df0f4ceaf9cbb0240f6a59548149cd1a69c79bc29ff6
+size 628

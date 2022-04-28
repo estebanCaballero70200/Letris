@@ -1,17 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlaceholderController : MonoBehaviour
-{
-    
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "square")
-        {
-            Destroy(this.gameObject);
-            Debug.Log("destruido");
-        }
-    }
-   
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:42e253fbc7c92c9bfa14927c070c2d1a7f3ce4feeb32b5ea18082e818c95b1d8
+size 357

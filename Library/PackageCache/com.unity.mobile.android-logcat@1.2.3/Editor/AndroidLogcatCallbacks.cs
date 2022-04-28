@@ -1,19 +1,3 @@
-using UnityEditor;
-using UnityEditor.Build;
-using UnityEditor.Build.Reporting;
-
-namespace Unity.Android.Logcat
-{
-    internal class AndroidLogcatCallbacks : IPostprocessBuildWithReport
-    {
-        public int callbackOrder { get { return 0; } }
-
-        public void OnPostprocessBuild(BuildReport report)
-        {
-            if ((report.summary.options & BuildOptions.AutoRunPlayer) != 0 &&
-                report.summary.platform == BuildTarget.Android &&
-                AndroidLogcatConsoleWindow.ShowDuringBuildRun)
-                AndroidLogcatConsoleWindow.ShowNewOrExisting(true);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa9c8aaafb8f77eb8b7017f4f21872068b3df280b3ab7e520b873ce3f02f5653
+size 628

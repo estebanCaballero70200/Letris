@@ -1,8 +1,3 @@
-## **Installing Android Logcat** 
-To install Android Logcat package, follow the instructions in the [Package Manager documentation](https://docs.unity3d.com/Packages/com.unity.package-manager-ui@latest/index.html). 
-
-You can access Android Logcat window in the Unity Editor via
-- Menu: **Window \> Analysis \> Android Logcat**
-- Shortcut: **Alt+6** on Windows, **Option+6** on macOS.
-
-![Android Logcat Window](images/android_logcat_window.png)
+version https://git-lfs.github.com/spec/v1
+oid sha256:a590ee813afeca4d9c496d744a75195dfe3447df3ef816de2793b80c80389093
+size 450
