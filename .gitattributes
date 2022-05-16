@@ -4115,3 +4115,6 @@
 /Library/PlayerDataCache/Android/Data/99b174c1f1e9b2e4fab7a9fdc99b60d8 filter=lfs diff=lfs merge=lfs -text
 /Library/PlayerDataCache/Android/Data/level3 filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
+*.css filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
+*.html filter=lfs diff=lfs merge=lfs -text
